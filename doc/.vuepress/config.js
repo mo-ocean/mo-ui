@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Hello Mo-Ui',
   description: '一个全新的VUE UI框架',
-  base: '/',
+  base: '/mo-ui/',
   dest: './docs',
   themeConfig: {
     search: true,
