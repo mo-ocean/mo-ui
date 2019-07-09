@@ -19,17 +19,16 @@ module.exports = {
         link: 'https://google.com'
       },
     ],
-    sidebar: [{
-        title: '开发指南',
+    sidebar: {
+      '/guide/': [{
+        title: '使用指南',
         collapsable: false,
         children: [
-         '#button'
+          '',
+          'button',
+
         ]
-      },
-      {
-        title: '组件',
-        children: [ '/']
-      }
-    ],
+      }],
+    },
   }
 }
