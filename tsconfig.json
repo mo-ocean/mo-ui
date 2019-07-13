@@ -1,25 +1,34 @@
 {
   "compilerOptions": {
+    // 编译输出目标 ES 版本
     "target": "esnext",
+    // 采用的模块系统
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+     // 从 tslib 导入外部帮助库: 比如__extends，__rest等
     "importHelpers": true,
+    // 如何处理模块
     "moduleResolution": "node",
+    // 启用装饰器
     "experimentalDecorators": true,
     "esModuleInterop": true,
+    // 允许从没有设置默认导出的模块中默认导入
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    // 设置引入的定义文件
     "types": [
       "webpack-env",
       "jest"
     ],
+    // 指定特殊模块的路径
     "paths": {
       "@/*": [
         "src/*"
       ]
     },
+    // 编译过程中需要引入的库文件的列表
     "lib": [
       "esnext",
       "dom",
@@ -27,6 +36,7 @@
       "scripthost"
     ]
   },
+   // ts 管理的文件
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
@@ -34,6 +44,7 @@
     "tests/**/*.ts",
     "tests/**/*.tsx"
   ],
+  // ts 排除的文件
   "exclude": [
     "node_modules"
   ]
